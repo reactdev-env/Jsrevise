@@ -1,5 +1,5 @@
-function greet(name,age) {
-    console.log('Hello' + name +' ' + age);
+function person(fname,lname,age,ht,wt){
+    console.log(fname+ ' ' + lname + ' ' + age + ' ' +ht + ' ' + wt)
 }
 
-greet('pavan', '25');
+person('pavan sai','pasupuleti','25','5.7','95')
