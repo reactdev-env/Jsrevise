@@ -1,11 +1,5 @@
-const person = {
-    name:'pavan',
-    age:25,
-    ht:5.11,
-    wt:97,
-    City:'Hyderabd',
-    State:'Telangana'
-
+function greet(name) {
+    console.log('Hello' + name);
 }
 
-console.log(person)
+greet('pavan');
