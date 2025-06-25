@@ -1,33 +1,29 @@
+var a = function b(){
+  console.log("function assigning to a var")
+}
+
 a();
-b();
 
+//passed as arguments to other functions
 
-//Function statement aka declaration
-function a() {
-  console.log("This is the function");
+function sayHello(){
+  return "Hello"
 }
 
-//function expression
-
-var b = function (){
-  console.log("This is the b function");
+function greet(){
+  console.log("Anonymus function");
 }
 
-//Anonymus function
+greet(sayHello);
 
-//function () {
-  console.log("This is the anonymus function")
-//}
 
-//Named function
+// returning from other functions
 
-var c= function xyz(){
-  console.log("Named function")
+function outer(){
+  return function(){
+    console.log("I am inner")
+  };
 }
 
-c();
-
-
-
-
-
+const inner= outer();    // Took new variable inner and assigned outer to inner 
+inner();
